@@ -1,0 +1,17 @@
+[project]
+name = "nexus3client"
+version = "0.1.0"
+description = "Python client to manage Nexus3 packages and Docker images"
+authors = [
+    { name = "Prabhu Thangaraj", email = "thangaraj.prabhu@gmail.com" },
+]
+dependencies = ["requests"]
+readme = "README.md"
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = ["pytest", "requests-mock"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
